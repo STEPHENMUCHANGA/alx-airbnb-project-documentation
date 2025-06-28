@@ -3,6 +3,7 @@
 ### Objective
 
 #### Identify and document the key features and functionalities of the Airbnb Clone project.
-#### ![Project documentation drawio](https://github.com/user-attachments/assets/21f20264-8944-4cc3-bac3-5478657ed0dc)
+#### ![Features and functionalities drawio](https://github.com/user-attachments/assets/b6aa8816-bf18-41bf-b00a-b9ef1e068693)
+
 
 
