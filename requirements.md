@@ -30,7 +30,7 @@ This document outlines the technical and functional requirements for three key b
   "message": "User registered successfully",
   "token": "JWT_TOKEN_HERE"
 }
-Output (Failure):
+### Output (Failure):
 
 <--json-->
 <--Copy-->
