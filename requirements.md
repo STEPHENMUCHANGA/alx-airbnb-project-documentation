@@ -26,39 +26,28 @@ This document outlines the technical and functional requirements for three key b
   "last_name": "Doe"
 }
 
-json
-Copy
-Edit
 {
   "message": "User registered successfully",
   "token": "JWT_TOKEN_HERE"
 }
 Output (Failure):
 
-json
-Copy
-Edit
+<--json-->
+<--Copy-->
+<--Edit-->
 {
   "error": "Email already in use"
 }
 
-1.2 Login User
-POST /api/auth/login
+<--1.2 Login User-->
+<--POST /api/auth/login-->
 
-Input:
-
-json
-Copy
-Edit
 {
   "email": "user@example.com",
   "password": "securePassword123"
 }
-Output (Success):
+<--Output (Success):-->
 
-json
-Copy
-Edit
 {
   "token": "JWT_TOKEN_HERE",
   "user": {
@@ -67,22 +56,17 @@ Edit
   }
 }
 
-Property Management
-Functional Requirements
-Hosts can create, update, or delete their property listings.
+<--Property Management-->
+<--Functional Requirements-->
+<--Hosts can create, update, or delete their property listings.-->
 
-Guests can view and filter listings.
+<--Guests can view and filter listings.-->
 
-Listings include title, description, price, location, amenities, images.
+<--Listings include title, description, price, location, amenities, images.-->
 
-2.1 Create Property
-POST /api/properties
+<--2.1 Create Property-->
+<--POST /api/properties-->
 
-Input:
-
-json
-Copy
-Edit
 {
   "name": "Modern Villa",
   "description": "A 4-bedroom luxury villa with ocean view.",
@@ -90,58 +74,49 @@ Edit
   "pricepernight": 120,
   "amenities": ["wifi", "pool", "kitchen"]
 }
-json
-Copy
-Edit
+
 {
   "message": "Property created successfully",
   "property_id": "uuid"
 }
-2.2 Update Property
- PUT /api/properties/:id
 
-2.3 Delete Property
-DELETE /api/properties/:id
+<--2.2 Update Property-->
+ <--PUT /api/properties/:id-->
 
-2.4 Get Property by ID
- GET /api/properties/:id
+<--2.3 Delete Property-->
+<--DELETE /api/properties/:id-->
 
- 2.5 Search Properties
- GET /api/properties?location=Mombasa&guests=4&minPrice=50&maxPrice=200
+<--2.4 Get Property by ID-->
+<--GET /api/properties/:id-->
 
- 3. Booking System
- Functional Requirements
+<--2.5 Search Properties-->
+ <--GET /api/properties?location=Mombasa&guests=4&minPrice=50&maxPrice=200-->
 
-API Endpoints
- 3.1 Create Booking
- POST /api/bookings
+ <--3. Booking System-->
+ <--Functional Requirements-->
 
-Input:
+<--API Endpoints-->
+ <--3.1 Create Booking-->
+ <--POST /api/bookings-->
 
-json
-Copy
-Edit
 {
   "property_id": "uuid",
   "start_date": "2025-07-15",
   "end_date": "2025-07-20"
 }
 
-json
-Copy
-Edit
 {
   "message": "Booking created successfully",
   "booking_id": "uuid"
 }
- 3.2 Cancel Booking
- PUT /api/bookings/:id/cancel
+ <--3.2 Cancel Booking-->
+ <--PUT /api/bookings/:id/cancel-->
 
- 3.3 View Bookings (User)
- GET /api/bookings?user_id=uuid
+ <--3.3 View Bookings (User)-->
+ <--GET /api/bookings?user_id=uuid-->
 
- 3.4 View Bookings (Host)
-GET /api/bookings?host_id=uuid
+ <--3.4 View Bookings (Host)-->
+<--GET /api/bookings?host_id=uuid-->
 
-Security Considerations
- All passwords hashed (bcrypt).
+<--Security Considerations-->
+ <--All passwords hashed (bcrypt).-->
