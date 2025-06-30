@@ -31,9 +31,6 @@ This document outlines the technical and functional requirements for three key b
   "token": "JWT_TOKEN_HERE"
 }
 
-<--json-->
-<--Copy-->
-<--Edit-->
 {
   "error": "Email already in use"
 }
